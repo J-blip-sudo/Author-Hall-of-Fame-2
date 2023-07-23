@@ -13,7 +13,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author miche
+ * @author JONATHAN TOURIZ
  */
 public class Director extends Author {
      

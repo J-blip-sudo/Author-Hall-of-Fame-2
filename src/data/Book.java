@@ -6,7 +6,7 @@ package data;
 
 /**
  *
- * @author miche
+ * @author JONATHAN TOURIZ
  */
 public class Book {
     public String name;

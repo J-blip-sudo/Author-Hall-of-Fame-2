@@ -10,7 +10,7 @@
 public class Bookinfo extends javax.swing.JFrame {
 
     /**
-     * Creates new form Bookinfo
+     * Creates new form BookInfo
      */
     public Bookinfo(data.Book book) {
         initComponents();
@@ -30,34 +30,37 @@ public class Bookinfo extends javax.swing.JFrame {
     private void initComponents() {
 
         year = new javax.swing.JLabel();
-        des = new javax.swing.JLabel();
         name = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        des = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Name");
 
         year.setText("JLabel");
 
-        des.setText("JLabel");
-
         name.setText("jLabel1");
+
+        des.setEditable(false);
+        des.setColumns(20);
+        des.setLineWrap(true);
+        des.setRows(5);
+        jScrollPane1.setViewportView(des);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(name)
+                .addGap(18, 18, 18)
+                .addComponent(year)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(des, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(name)
-                        .addGap(18, 18, 18)
-                        .addComponent(year)
-                        .addContainerGap(302, Short.MAX_VALUE))))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -66,9 +69,9 @@ public class Bookinfo extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(year)
                     .addComponent(name))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(des)
-                .addContainerGap(250, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -79,7 +82,8 @@ public class Bookinfo extends javax.swing.JFrame {
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel des;
+    private javax.swing.JTextArea des;
+    private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JLabel name;
     public javax.swing.JLabel year;
     // End of variables declaration//GEN-END:variables

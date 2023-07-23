@@ -14,7 +14,7 @@ import javax.imageio.ImageIO;
 
 /**
  *
- * @author miche
+ * @author JONATHAN TOURIZ
  */
 public class Author {
     public ImageIcon smallPicture;

@@ -5,7 +5,7 @@
 
 /**
  *
- * @author miche
+ * @author JONATHAN TOURIZ
  */
 public class Book extends javax.swing.JPanel {
     data.Book book;

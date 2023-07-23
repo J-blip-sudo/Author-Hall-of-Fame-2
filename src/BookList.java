@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author miche
+ * @author JONATHAN TOURIZ
  */
 public class BookList extends JPanel {
     public BookList() {
